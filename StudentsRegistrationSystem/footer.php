@@ -15,16 +15,13 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        
-   
     }
     .footerContent{
         margin: auto;
         width: 80%;
         display: flex;
         align-content: center;
-        justify-content: center;
-        
+        justify-content: center; 
     }
     p{
         padding: 5px 20px;

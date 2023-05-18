@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
             $errors['courseName'] = "*Required" ;
         } else{
             if(!preg_match('/^[a-zA-Z\s]+$/', $courseName )){
-                $errors['courseName'] = '*Pizza name not valid';
+                $errors['courseName'] = '*Course name not valid';
             }
                 
         }
@@ -96,9 +96,7 @@ if(isset($_POST['submit'])){
         //save to db and check that it works
         if(mysqli_query($link, $sqlquery)){
             //success - data inserted into db
-            //echo 'Your pizza order is received';
-            //header('location: pizzas.php');
-        }else{
+       }else{
             echo 'SQL query error: ' .mysqli_error($link);
         }
        
@@ -155,7 +153,7 @@ if(isset($_POST['submit'])){
 
 <section class="formContainer">
     <h4>Register New Student</h4>
-    <form class="pizzaOrderForm" action="register.php" method="POST">
+    <form class="registrationForm" action="register.php" method="POST">
     <div class="input-group mb-3">
         <span class="input-group-text" id="inputGroup-sizing-default">Full Names</span>
         <input value = '<?php echo htmlspecialchars($fullNames) ?>' type="text" name="fullNames"class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">

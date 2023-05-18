@@ -53,7 +53,7 @@
         max-width: 100%;
     }
     #editUserImage{
-        width: 20rem;
+        width: 15rem;
     }
    
 
@@ -71,7 +71,7 @@
     </div>
     <div class="registerContainer">
         <div  class="imgDiv"><img id="editUserImage" src="Images/editStudentrecord.png" alt=""></div>
-        <h3>View & Update Student List</h3> 
+        <h3>View & Edit Student Records</h3> 
         <h4><a href="registrationList.php"><i class="bi bi-pencil-square"> Click here</i></a><br></h4>
     </div>
 
