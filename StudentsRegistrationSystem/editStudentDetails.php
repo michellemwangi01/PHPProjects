@@ -14,12 +14,12 @@ if(isset($_GET)){
     $studentRecord = mysqli_fetch_assoc($result);
     //print_r($studentRecord);
 
-        $fullName = mysqli_real_escape_string($link, $studentRecord['studentName']);
-        $email = mysqli_real_escape_string($link, $studentRecord['studentEmail']);
-        $phoneNumber = mysqli_real_escape_string($link, $studentRecord['studentMobile']);
-        $courseName = mysqli_real_escape_string($link, $studentRecord['studentCourse']);
-        $regID = mysqli_real_escape_string($link, $studentRecord['studentRegID']); 
-        $regDate = mysqli_real_escape_string($link, $studentRecord['RegDate']); 
+    $fullName = mysqli_real_escape_string($link, $studentRecord['studentName']);
+    $email = mysqli_real_escape_string($link, $studentRecord['studentEmail']);
+    $phoneNumber = mysqli_real_escape_string($link, $studentRecord['studentMobile']);
+    $courseName = mysqli_real_escape_string($link, $studentRecord['studentCourse']);
+    $regID = mysqli_real_escape_string($link, $studentRecord['studentRegID']); 
+    $regDate = mysqli_real_escape_string($link, $studentRecord['RegDate']); 
 
     // $fullName = $studentRecord['studentName'];
     // $phoneNumber = $studentRecord['studentMobile'];
